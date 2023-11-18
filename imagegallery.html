@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Fadhillah Haidar Rahyang - jQuery</title>
+        <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/70142?s=280&v=4">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#all").click(function(){
+                $(".anemo, .geo, .cryo, .pyro, .hydro, .electro, .dendro").show();
+              });
+              $("#anemo").click(function(){
+                $(".geo, .cryo, .pyro, .hydro, .electro, .dendro").hide();
+                $(".anemo").show();
+              });
+              $("#geo").click(function(){
+                $(".anemo, .cryo, .pyro, .hydro, .electro, .dendro").hide();
+                $(".geo").show();
+              });
+              $("#cryo").click(function(){
+                $(".anemo, .geo, .pyro, .hydro, .electro, .dendro").hide();
+                $(".cryo").show();
+              });
+              $("#pyro").click(function(){
+                $(".anemo, .geo, .cryo, .hydro, .electro, .dendro").hide();
+                $(".pyro").show();
+              });
+              $("#hydro").click(function(){
+                $(".anemo, .geo, .cryo, .pyro, .electro, .dendro").hide();
+                $(".hydro").show();
+              });
+              $("#electro").click(function(){
+                $(".anemo, .geo, .cryo, .pyro, .hydro, .dendro").hide();
+                $(".electro").show();
+              });
+              $("#dendro").click(function(){
+                $(".anemo, .geo, .cryo, .pyro, .hydro, .electro").hide();
+                $(".dendro").show();
+              });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html" class="nav">Home</a>
+            <a href="imagegallery.html" class="nav">ImageGallery</a>
+            <a href="FAQ.html" class="nav">FAQ</a>
+            <a href="zoom.html" class="nav">ImageZoomer</a>
+        </div>
+        <div id="top-title">
+            <h1>Genshin Impact</h1>
+            <h4>Image Filter</h4>
+            <hr>
+            <h5>Fadhillah - L1BC</h5>
+        </div>
+        <div id="section1">
+            <div class="filter"><button id="all">All</button></div>
+            <div class="filter"><button id="anemo">Anemo</button></div>
+            <div class="filter"><button id="geo">Geo</button></div>
+            <div class="filter"><button id="cryo">Cryo</button></div>
+            <div class="filter"><button id="pyro">Pyro</button></div>
+            <div class="filter"><button id="hydro">Hydro</button></div>
+            <div class="filter"><button id="electro">Electro</button></div>
+            <div class="filter"><button id="dendro">Dendro</button></div>
+        </div>
+        <div id="section2">
+            <img class="geo" src="Albedo.png">
+            <img class="dendro" src="Alhaitham.png">
+            <img class="cryo" src="Aloy.png">
+            <img class="cryo" src="Ayaka.png">
+            <img class="hydro" src="Ayato.png">
+            <img class="dendro" src="Baizhu.png">
+            <img class="electro" src="Cyno.png">
+            <img class="pyro" src="Dehya.png">
+            <img class="pyro" src="Diluc.png">
+            <img class="cryo" src="Eula.png">
+            <img class="cryo" src="Ganyu.png">
+            <img class="pyro" src="Hu Tao.png">
+            <img class="geo" src="Itto.png">
+            <img class="anemo" src="Jean.png">
+            <img class="anemo" src="Kazuha.png">
+            <img class="electro" src="Keqing.png">
+            <img class="pyro" src="Klee.png">
+            <img class="hydro" src="Kokomi.png">
+            <img class="pyro" src="Lyney.png">
+            <img class="hydro" src="Mona.png">
+            <img class="dendro" src="Nahida.png">
+            <img class="hydro" src="Neuvillette.png">
+            <img class="hydro" src="Nilou.png">
+            <img class="cryo" src="Qiqi.png">
+            <img class="electro" src="Raiden.png">
+            <img class="cryo" src="Shenhe.png">
+            <img class="hydro" src="Tartaglia.png">
+            <img class="dendro" src="Tighnari.png">
+            <img class="anemo" src="Venti.png">
+            <img class="anemo" src="Wanderer.png">
+            <img class="cryo" src="Wriothesley.png">
+            <img class="anemo" src="Xiao.png">
+            <img class="electro" src="Yae.png">
+            <img class="hydro" src="Yelan.png">
+            <img class="pyro" src="Yoimiya.png">
+            <img class="geo" src="Zhongli.png">
+        </div>
+    </body>
+</html>

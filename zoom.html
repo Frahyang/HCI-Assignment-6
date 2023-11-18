@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Fadhillah Haidar Rahyang - jQuery</title>
+        <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/70142?s=280&v=4">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#img1small").click(function(){
+                    $(this, "#img2big, img3big" ).hide();
+                    $("#img2big, #img3big").hide();
+                    $("#img1big, #img2small, #img3small").show();
+                });
+                $("#img2small").click(function(){
+                    $(this).hide();
+                    $("#img1big, #img3big").hide();
+                    $("#img2big, #img1small, #img3small").show();
+                });
+                $("#img3small").click(function(){
+                    $(this).hide();
+                    $("#img1big, #img2big").hide();
+                    $("#img3big, #img1small, #img2small").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html" class="nav">Home</a>
+            <a href="imagegallery.html" class="nav">ImageGallery</a>
+            <a href="FAQ.html" class="nav">FAQ</a>
+            <a href="zoom.html" class="nav">ImageZoomer</a>
+        </div>
+        <div id="top-title">
+            <h1>Sceneries</h1>
+            <h4>Image Zoom</h4>
+            <hr>
+            <h5>Fadhillah - L1BC</h5>
+        </div>
+        <div>
+            <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSY7x0shpPE3J7JCulJ5cXC2vYmOCl_LNqhiUPuDeWOA3MaUUut7AM3Wt8VJzFs5gxA" class="img1" id="img1small">
+            <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTLk6S-BnOdSLkUrjZfSEvRT0h53aWAaimt45sjyxvQRk4eDbx9fHn3GdHPgoioaa_G" class="img1" id="img2small">
+            <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQbBnCskxBFqrgATeglMFdHbIiVHJhd_ZfyX5tPBGmPK-5IJEWVRqo8QNaHbfEWrDXg" class="img1" id="img3small">
+            <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSY7x0shpPE3J7JCulJ5cXC2vYmOCl_LNqhiUPuDeWOA3MaUUut7AM3Wt8VJzFs5gxA" class="img2" id="img1big">
+            <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTLk6S-BnOdSLkUrjZfSEvRT0h53aWAaimt45sjyxvQRk4eDbx9fHn3GdHPgoioaa_G" class="img2" id="img2big">
+            <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQbBnCskxBFqrgATeglMFdHbIiVHJhd_ZfyX5tPBGmPK-5IJEWVRqo8QNaHbfEWrDXg" class="img2" id="img3big">
+        </div>
+    </body>
+</html>
